@@ -1,0 +1,24 @@
+services:
+  web:
+    image: my-python-app
+    build: .
+    container_name: web
+    environment:
+      - PORT=8000
+      - DB_HOST=db
+    ports:
+      - "8000:8000"
+  db:
+    image: mysql
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: dany
+    volumes: 
+      - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql:ro
+  phpmyadmin:
+    image: phpmyadmin:latest
+    depends_on:
+      - db
+    ports:
+      - "8001:80"
