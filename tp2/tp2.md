@@ -6,7 +6,9 @@
 
 [docker-compose.yml](./I//docker-compose.yml)
 
-## II Dév. Python
+# TP2 dév : packaging et environnement de dév local
+
+## 1. Calculatrice
 
 ### 🌞 Le lien vers ton dépôt
 
@@ -23,3 +25,9 @@
 ### 🌞 Packager une application à vous
 
 [hangman_web](https://github.com/danyGhassan/hangman_web)
+
+# TP2 admins : Web stack
+
+## I. Good practices
+
+
